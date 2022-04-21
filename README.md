@@ -1,4 +1,7 @@
-# DL4media_ticker_extractor
+# DL4media-ticker-extractor
+
+**To run** download everything from the latest release, then start the docker with "docker compose up --build". The server accepts text and then returns images for the passed text.
+
 # Use
 
 Curl example:
@@ -9,4 +12,4 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
   -H 'postman-token: fe3ee7f4-b70b-414f-cb42-4fd07fc486aa' \
-  -F 'file=@C:\Users\artur\Desktop\dl-framework\VidsTranscripts\Stuff\Vid32.mp4'
+  -F 'file=<path_to_video_dir>\Video.mp4'
